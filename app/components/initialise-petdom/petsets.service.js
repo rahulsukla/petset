@@ -34,7 +34,7 @@
      * @description looks for all pets
      */
     function getPets() {
-      return $http.jsonp(' http://169.54.252.164:8000/api/v1/listing/?username=ppp3&api_key=170a41767f6ba69112aa51629e65490266110c7a&callback=JSON_CALLBACK')
+      return $http.get('../../../petlist.json')
         .then(function(response) {
           return response.data;
         })
