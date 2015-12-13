@@ -1,0 +1,63 @@
+<div id="pet-details">
+<a id="close" title="close" ng-click="$dismiss()">
+  <i class="glyphicon glyphicon-plus"></i>
+</a>
+  <div class="modal-body">
+    <div class="row">
+      <h4 class="pet-name">{{ petInfoCtrl.petDetails.name }}</h4>
+      <div class="col-sm-7 first-half">
+        <img src="{{ petInfoCtrl.petDetails.pic_urls[0] }}">
+        <div class="description">
+          <p>{{ petInfoCtrl.petDetails.description }}</p>
+        </div>
+      </div>
+      <div class="col-sm-5 second-half">
+        <dl>
+          <dt>
+            Breed
+          </dt>
+          <dd>
+            {{ petInfoCtrl.petDetails.breed }}
+          </dd>
+          <dt>
+            Gender
+          </dt>
+          <dd>
+            <span ng-if="petInfoCtrl.petDetails.gender  ==  'M'"> Male</span>
+            <span ng-if="petInfoCtrl.petDetails.gender  ==  'F'"> Female</span>
+          </dd>
+          <dt>
+            NEUTERED
+          </dt>
+          <dd>
+            Yes
+          </dd>
+          <dt>
+            Kid Friendly
+          </dt>
+          <dd>
+            undefined
+          </dd>
+          <dt>
+            Cat Friendly
+          </dt>
+          <dd>
+            undefined
+          </dd>
+        </dl>
+        <a href="" class="btn btn-warning btn-block"> <strong>Adopt</strong></a>
+        <div class="divider"></div>
+        <h4> {{ petInfoCtrl.petDetails.seller_name }} </h4>
+        <address>
+          <strong>Address</strong><br>
+          1355 Saket Market <br>Street, Suite 900<br>
+          Delhi, 11092<br>
+          <abbr title="Phone">p:</abbr> {{ petInfoCtrl.petDetails.phone }}
+        </address>
+        <h4>About the Owner</h4>
+        <p>We love dogs. We love saving them. We love finding them loving homes. We're a San Francisco Bay Area all-breed dog rescue saving dogs from shelters throughout India.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

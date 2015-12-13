@@ -1,0 +1,56 @@
+.n-details-unit {
+  font-size: 12px;
+  text-align: left;
+  min-height: 367px;
+  min-width: 90px;
+  vertical-align: top;
+  padding: 0;
+  border: 1px solid @border-outer;
+  border-radius: 5px;
+
+  & > .title {
+    font-size: 12px;
+    font-weight: 600;
+    color: @black;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid @border-inner;
+  }
+
+  ul.n-list-info {
+    margin: 0;
+    list-style: none;
+    padding: 14px 20px;
+
+    li {
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 12px;
+    }
+
+    .n-info-block {
+      overflow: hidden;
+    }
+
+    .n-info-block .n-label {
+      color: #6f787e;
+
+      float: left;
+      font-size: 11px;
+    }
+
+    .n-info-block > span {
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .n-info-block .n-value {
+      float: right;
+      color: @black;
+      text-align: right;
+    }
+  }
+}

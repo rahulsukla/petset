@@ -1,0 +1,45 @@
+<div class="filter-bar">
+  <div class="container-fluid">
+
+    <a href="" class="filter">
+      <i class="glyphicon glyphicon-filter"></i> Filter
+    </a>
+
+    <span class="pets-count"> <strong>{{ initCtrl.pets.objects.length }} Pets</strong> Available</span>
+
+    <a href="" class="sort"> Most Recent
+      <i class="glyphicon glyphicon-chevron-down"></i>
+    </a>
+
+  </div>
+</div>
+
+<div class="container-fluid pets-container">
+  <ul masonry class="pet-list">
+    <li class="masonry-brick pet-item" ng-repeat="pet in initCtrl.pets.objects">
+      <a href="" ng-click="initCtrl.openPetDetails(pet.id)">
+        <div ng-style="{'background-image': 'url({{ pet.pic_urls[0] }})'}" class="pet-image">
+          <div class="pet-details">
+            <h5 class="pet-title">
+              {{ pet.breed }}
+            </h5>
+            <h5 class="pet-subtitle"> {{ pet.city }}, {{ pet.country }}</h5>
+          </div>
+        </div>
+      </a>
+
+      <div class="pet-info">
+        <h4 class="pet-name" title="{{ pet.name }}"> {{ pet.name }} </h4>
+      </div>
+
+      <div class="pet-social">
+        <a href="">
+          <i class="glyphicon glyphicon-heart-empty"></i>
+        </a>
+        <a href="">
+          Share
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

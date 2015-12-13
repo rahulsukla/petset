@@ -1,0 +1,24 @@
+{
+  "name": "lesshat",
+  "main": [
+    "./build/lesshat.less",
+    "./build/lesshat-prefixed.less"
+  ],
+  "ignore": [
+    "mixins",
+    "*.md",
+    "*.json",
+    "LICENCE",
+    ".*.*"
+  ],
+  "homepage": "https://github.com/purposeindustries/lesshat",
+  "_release": "fdf857d809",
+  "_resolution": {
+    "type": "branch",
+    "branch": "fix-keyframe-safari9",
+    "commit": "fdf857d809a83efb63fedfc896f3218a096b5f31"
+  },
+  "_source": "https://github.com/purposeindustries/lesshat.git",
+  "_target": "fix-keyframe-safari9",
+  "_originalSource": "https://github.com/purposeindustries/lesshat.git"
+}
