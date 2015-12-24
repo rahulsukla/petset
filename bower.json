@@ -15,6 +15,7 @@
     "lesshat": "https://github.com/purposeindustries/lesshat.git#fix-keyframe-safari9",
     "modernizr": "~2.8.3",
     "bootstrap": "~3.3.5",
-    "angular-masonry": "~0.14.1"
+    "angular-masonry": "~0.14.1",
+    "angular-google-places-autocomplete": "0.2.7"
   }
 }

@@ -65,6 +65,42 @@ NG_DOCS={
       "moduleName": "petdom.initialise-petdom",
       "shortDescription": "Controller for displaying pet details",
       "keywords": "api controller details displaying initialise-petdom pet petdom"
+    },
+    {
+      "section": "api",
+      "id": "petdom.landing-page",
+      "shortName": "petdom.landing-page",
+      "type": "overview",
+      "moduleName": "petdom.landing-page",
+      "shortDescription": "Controller for landing page",
+      "keywords": "api controller landing landing-page loads module overview petdom"
+    },
+    {
+      "section": "api",
+      "id": "petdom.landing-page:LandingPageController",
+      "shortName": "LandingPageController",
+      "type": "controller",
+      "moduleName": "petdom.landing-page",
+      "shortDescription": "Controller which asks prism credentials for prism elements",
+      "keywords": "api asks controller credentials elements landing-page petdom prism"
+    },
+    {
+      "section": "api",
+      "id": "petdom.layout",
+      "shortName": "petdom.layout",
+      "type": "overview",
+      "moduleName": "petdom.layout",
+      "shortDescription": "Layout module",
+      "keywords": "$rootscope allow api controllers custom customlayout default layout layout- layoutclass module overview petdom set true variables"
+    },
+    {
+      "section": "api",
+      "id": "petdom.layout.layoutService",
+      "shortName": "petdom.layout.layoutService",
+      "type": "service",
+      "moduleName": "petdom.layout",
+      "shortDescription": "Service that can be used to set document layout. This layout is set in $rootScope variables",
+      "keywords": "$rootscope api changes class custom default description document inclusion layout layoutservice method module pass petdom service set setlayout sets styling variables"
     }
   ],
   "apis": {

@@ -1,0 +1,96 @@
+.layout-landing-page {
+  #header.fixed {
+    background-color: @petdom-yellow;
+    a{
+      color: #fff;
+    }
+  }
+  .banner {
+    background-image: url(../../../images/banner.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 450px;
+    height: 65vh;
+    .banner-text {
+      padding-top: 15%;
+
+      h1 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .main-search{
+      padding-top: 30px;
+
+      .form-group{
+        input{
+          min-width: 400px;
+        }
+        select {
+          min-width: 200px;
+        }
+      }
+
+      input, select, button{
+        height: 40px;
+        border-radius: 3px;
+      }
+      button {
+        font-weight: 600;
+        padding: 6px 30px;
+      }
+    }
+
+  }
+  section{
+    border-bottom: 1px solid #eee;
+    padding: 80px 0;
+    text-align: center;
+    h3{
+      padding-bottom: 40px;
+      font-weight: 600;
+    }
+  }
+  .features{
+    text-align: center;
+    color: @black;
+    img{
+      max-height: 250px;
+      margin-bottom: 30px;
+    }
+    h4{
+      font-weight: 700;
+    }
+    .description{
+      padding-top: 15px;
+      color: @black-2;
+    }
+  }
+  .recently-added {
+    .look-more{
+      margin-top: 15px;
+      font-weight: 700;
+    }
+  }
+  .stats-card {
+    padding: 80px 0;
+    background-color: #3a3e64;
+    text-align: center;
+    color: @white;
+
+    .title{
+      padding-bottom: 10px;
+    }
+    .count{
+      font-weight: 800;
+      padding-bottom: 0;
+    }
+
+  }
+}

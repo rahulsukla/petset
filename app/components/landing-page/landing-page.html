@@ -1,0 +1,190 @@
+<section class="banner" role="banner">
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="banner-text text-center">
+        <h1>FIND A PET TO ADOPT</h1>
+        <form class="form-inline main-search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter City, location, breed or name"
+          g-places-autocomplete
+          ng-model="homeCtrl.searchedLocation"
+          id="petLocation"/>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="" selected>Any breed</option>
+              <option>German Shephard</option>
+              <option>Breed 2</option>
+              <option>Breed 3</option>
+              <option>Breed 4</option>
+            </select>
+
+          </div>
+          <button type="submit" class="btn btn-warning">Search</button>
+        </form>
+    </div>
+  </div>
+</section>
+<!-- Features Section -->
+<section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/giveaway.png">
+        <h4>GIVE AWAY A PET</h4>
+        <p class="description">
+          List your Pet for adoption and spread the love. Let's help Pet find the right home for them
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/findpet.png">
+        <h4>Find a pet</h4>
+        <p class="description">
+          Search for pets that are looking for home in your locality. Get them home and find the unconditional love
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/ownpet.png">
+        <h4>Own a pet</h4>
+        <p class="description">
+          Express your interest and we will get in touch with you for all your pet related query. Happy Petting
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recently Added Pets -->
+<section class="recently-added">
+  <div class="container">
+    <div class="row">
+      <h3 class="heading">Recently Added</h3>
+      <ul class="pet-list">
+        <li class="pet-item">
+          <a href="">
+            <div style="background-image: url('/images/pet1.jpg')" class="pet-image">
+              <div class="pet-details">
+                <h5 class="pet-title">
+                   Pitbull Terrier
+                </h5>
+                <h5 class="pet-subtitle"> Bingham Farms MI (Michigan Humane Society)</h5>
+              </div>
+            </div>
+          </a>
+
+          <div class="pet-info">
+            <h4 class="pet-name" title=""> King </h4>
+          </div>
+
+          <div class="pet-social">
+            <a href="">
+              <i class="glyphicon glyphicon-heart-empty"></i>
+            </a>
+            <a href="">
+              Share
+            </a>
+          </div>
+        </li>
+        <li class="pet-item">
+          <a href="">
+            <div style="background-image: url('/images/pet4.jpeg')" class="pet-image">
+              <div class="pet-details">
+                <h5 class="pet-title">
+                   Chihuahua
+                </h5>
+                <h5 class="pet-subtitle"> Oakland and Dublin CA (East Bay SPCA)</h5>
+              </div>
+            </div>
+          </a>
+
+          <div class="pet-info">
+            <h4 class="pet-name" title=""> Phantom </h4>
+          </div>
+
+          <div class="pet-social">
+            <a href="">
+              <i class="glyphicon glyphicon-heart-empty"></i>
+            </a>
+            <a href="">
+              Share
+            </a>
+          </div>
+        </li>
+        <li class="pet-item">
+          <a href="">
+            <div style="background-image: url('/images/pet2.jpeg')" class="pet-image">
+              <div class="pet-details">
+                <h5 class="pet-title">
+                   Boxer
+                </h5>
+                <h5 class="pet-subtitle"> Bingham Farms MI (Michigan Humane Society)</h5>
+              </div>
+            </div>
+          </a>
+
+          <div class="pet-info">
+            <h4 class="pet-name" title=""> Dakota </h4>
+          </div>
+
+          <div class="pet-social">
+            <a href="">
+              <i class="glyphicon glyphicon-heart-empty"></i>
+            </a>
+            <a href="">
+              Share
+            </a>
+          </div>
+        </li>
+        <li class="pet-item">
+          <a href="">
+            <div style="background-image: url('/images/pet3.jpeg')" class="pet-image">
+              <div class="pet-details">
+                <h5 class="pet-title">
+                   Pug
+                </h5>
+                <h5 class="pet-subtitle"> San Francisco CA (Copper's Dream Rescue)</h5>
+              </div>
+            </div>
+          </a>
+
+          <div class="pet-info">
+            <h4 class="pet-name" title=""> Hugo </h4>
+          </div>
+
+          <div class="pet-social">
+            <a href="">
+              <i class="glyphicon glyphicon-heart-empty"></i>
+            </a>
+            <a href="">
+              Share
+            </a>
+          </div>
+        </li>
+      </ul>
+      <a href="" class="btn btn-warning look-more">See more </a>
+      <p>{{ homeCtrl.searchedLocation }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats card -->
+
+<section class="stats-card text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="title">Total Verified Listings</h4>
+        <h3 class="count">15,000</h3>
+      </div>
+      <div class="col-md-4">
+        <h4 class="title">Listings Added Today</h4>
+        <h3 class="count">300</h3>
+      </div>
+      <div class="col-md-4">
+        <h4 class="title">Pets Adopted</h4>
+        <h3 class="count">1,500</h3>
+      </div>
+    </div>
+  </div>
+</section>

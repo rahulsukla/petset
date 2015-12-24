@@ -8,10 +8,7 @@
 
   locationConfig.$inject = ['$locationProvider'];
   function locationConfig($locationProvider) {
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    }).hashPrefix('!');
+    $locationProvider.html5Mode(false);
   }
 
   routes.$inject = ['$routeProvider', '$httpProvider'];
@@ -25,17 +22,9 @@
 
     $routeProvider
       .when('/', {
-        templateUrl: 'static/app/components/initialise-petdom/initialise-petdom.html',
-        controller: 'initialisePetdomController',
-        controllerAs: 'initCtrl',
-        resolve: {
-          petSets: ['petSetsService', function (petSetsService) {
-            return petSetsService.getPets()
-              .catch(function() {
-                return false;
-              })
-          }]
-        }
+        templateUrl: 'app/components/landing-page/landing-page.html',
+        controller: 'LandingPageController',
+        controllerAs: 'homeCtrl'
       })
 
       .otherwise({redirectTo: '/'});

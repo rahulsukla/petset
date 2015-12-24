@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       },
       app: {
         cwd: '../',
-        src: 'static/app/**/*.html',
+        src: 'petset/app/**/*.html',
         dest: 'app/templates.generated.js'
       }
     },
